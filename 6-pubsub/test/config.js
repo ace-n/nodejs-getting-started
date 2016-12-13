@@ -21,6 +21,7 @@ module.exports = {
   cwd: path.resolve(path.join(__dirname, `../`)),
   cmd: `node`,
   args: [`app.js`],
+  url: `http://localhost:8086`,
   msg: `Bookshelf`,
   env: {
     SUBSCRIPTION_NAME: `${test}-shared-worker-subscription`,

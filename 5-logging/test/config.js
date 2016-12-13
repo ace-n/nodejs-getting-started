@@ -20,5 +20,6 @@ module.exports = {
   cwd: path.resolve(path.join(__dirname, `../`)),
   cmd: `node`,
   args: [`app.js`],
+  url: `http://localhost:8085`,
   msg: `Bookshelf`
 };
