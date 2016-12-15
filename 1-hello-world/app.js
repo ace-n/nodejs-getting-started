@@ -24,9 +24,17 @@ app.get('/', (req, res) => {
 });
 // [END hello_world]
 
+console.log('--------------------------------------');
+console.log('1 APP JS CALLED', module === require.main);
+console.log('--------------------------------------');
+console.log('1 FILENAME', require.main.filename);
+console.log('--------------------------------------');
+console.log('1 PARENT', module.parent);
+console.log('--------------------------------------');
 if (module === require.main) {
   // [START server]
   // Start the server
+  console.log('1 APP JS SRV LAUNCHING');
   const server = app.listen(process.env.PORT || 8081, () => {
     const port = server.address().port;
     console.log(`App listening on port ${port}`);
